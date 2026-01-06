@@ -1,0 +1,240 @@
+/* General Page Styles */
+body.bg-about {
+    background: linear-gradient(to right, #2f667f, #00c6ff);
+    min-height: 100vh;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #2f667f, #00c6ff);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar .nav-link {
+    color: white !important;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.navbar .nav-link:hover {
+    color: #ffeeba !important;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: white !important;
+}
+.navbar-brand img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+.card-header {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.card.bg-light {
+    background-color: #f1f5f9 !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #2563eb;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+.btn-sm i {
+    margin-right: 5px;
+}
+
+/* Table Styles */
+.table {
+    background-color: #fff;
+}
+.table th {
+    background-color: #2563eb;
+    color: white;
+}
+.table-hover tbody tr:hover {
+    background-color: #f1f5f9;
+}
+.badge-success {
+    background-color: #22c55e;
+}
+.badge-primary {
+    background-color: #3b82f6;
+}
+.badge-warning {
+    background-color: #f59e0b;
+}
+
+/* Footer */
+footer.footer {
+    background: #e9ecef;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 30px;
+    }
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Medical Record Styles */
+.medical-record-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.5rem;
+}
+
+.medical-record-header {
+    background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.medical-record-body {
+    padding: 1.5rem;
+}
+
+.medical-record-section {
+    margin-bottom: 1.5rem;
+}
+
+.medical-record-section:last-child {
+    margin-bottom: 0;
+}
+
+.medical-record-section h6 {
+    color: #4b5563;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.medical-record-section p {
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.medical-record-section .badge {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Treatment List Styles */
+.treatment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.treatment-item {
+    background: #f3f4f6;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.treatment-item:last-child {
+    margin-bottom: 0;
+}
+
+.treatment-item h6 {
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.treatment-item p {
+    color: #4b5563;
+    margin-bottom: 0;
+}
+
+/* Prescription List Styles */
+.prescription-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.prescription-item {
+    background: #f3f4f6;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.prescription-item:last-child {
+    margin-bottom: 0;
+}
+
+.prescription-item h6 {
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.prescription-item p {
+    color: #4b5563;
+    margin-bottom: 0;
+}
+
+/* Status Badge Styles */
+.status-badge {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+}
+
+.status-badge.completed {
+    background-color: #10b981;
+    color: white;
+}
+
+.status-badge.ongoing {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.status-badge.pending {
+    background-color: #f59e0b;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .medical-record-body {
+        padding: 1rem;
+    }
+
+    .treatment-item,
+    .prescription-item {
+        padding: 0.75rem;
+    }
+}

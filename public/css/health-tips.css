@@ -1,0 +1,51 @@
+/* appoint.css unified styles */
+body.bg-about {
+    background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.health-tips-header {
+    color: #fff;
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.health-tips-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.health-tip-card {
+    background: rgba(255,255,255,0.97);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    width: 320px;
+    transition: transform 0.2s;
+    margin-bottom: 2rem;
+}
+.health-tip-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+.health-tip-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2193b0;
+    margin-bottom: 0.5rem;
+}
+.health-tip-meta {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 1rem;
+}
+.health-tip-content {
+    color: #333;
+    font-size: 1.05rem;
+} 

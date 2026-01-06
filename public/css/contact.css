@@ -1,0 +1,208 @@
+/* General Styles */
+body.bg-contact {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to right, rgba(47, 102, 127, 0.7), rgba(0, 198, 255, 0.7)), url('background.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(90deg, #2f667f, #00c6ff);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+}
+.navbar-brand img {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ffeeba;
+}
+.nav-link {
+    font-weight: bold;
+    color: #fff !important;
+    margin-right: 15px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.nav-link:hover {
+    color: #ffeeba !important;
+    transform: translateY(-3px);
+}
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #ffeeba;
+    border-radius: 2px;
+}
+
+/* Hero Section */
+.dashboard-header {
+    background: linear-gradient(to right, rgba(47, 102, 127, 0.8), rgba(0, 198, 255, 0.8)), url('background.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.dashboard-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.dashboard-header .container {
+    position: relative;
+    z-index: 2;
+}
+.dashboard-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: fadeInDown 1s ease-in-out;
+}
+.dashboard-header p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Contact Form */
+.sign-form {
+    background: rgba(47, 102, 127, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.sign-form .form-label {
+    font-weight: bold;
+    color: #fff;
+}
+.sign-form .form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.sign-form .btn {
+    background: linear-gradient(135deg, #2f667f, #00c6ff);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sign-form .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(47, 102, 127, 0.5);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #2f667f, #00c6ff);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer a {
+    color: #ffeeba;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #2f667f, #00c6ff);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#backToTop:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(47, 102, 127, 0.5);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-header h1 {
+        font-size: 2.5rem;
+    }
+    .dashboard-header p {
+        font-size: 1.2rem;
+    }
+}
